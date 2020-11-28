@@ -1,0 +1,52 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path":"pages/user/user",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path":"pages/login/login"
+		},
+		{
+			"path":"pages/user_details/user_details"
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#19CAAD",
+		"backgroundColor": "#F8F8F8",
+		"usingComponents": {
+			"van-icon": "wxcomponents/vant-weapp/icon/index",
+			"van-share-sheet": "wxcomponents/vant-weapp/share-sheet/index",
+			"van-dialog": "wxcomponents/vant-weapp/dialog/index",
+			"van-divider": "wxcomponents/vant-weapp/divider/index",
+			"van-notice-bar": "wxcomponents/vant-weapp/notice-bar/index",
+			"van-uploader": "wxcomponents/vant-weapp/uploader/index"
+		}
+	},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath":"pages/index/index",
+				"iconPath":"static/icon/home.png",
+				"selectedIconPath":"static/icon/home-o.png",
+				"text":"首页"
+			},	
+			{
+				"pagePath":"pages/user/user",
+				"iconPath":"static/icon/user.png",
+				"selectedIconPath":"static/icon/user-o.png",
+				"text":"个人中心"
+			}
+		]
+	}
+}
