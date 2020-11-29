@@ -40,6 +40,16 @@
           justify-content: center;
   background-color: #eaf1e9;
 }
+.notice-bar {
+  width: 100%;
+}
+.details image {
+  width: 750rpx;
+  height: 400rpx;
+  -webkit-border-radius: 30rpx;
+          border-radius: 30rpx;
+  margin-top: 5rpx;
+}
 .row1 {
   width: 730rpx;
   height: 400rpx;
@@ -54,7 +64,7 @@
           justify-content: space-around;
 }
 .row1 .row1_1 {
-  margin-top: 10rpx;
+  margin-top: 5rpx;
   width: 350rpx;
   height: 400rpx;
 }
@@ -79,7 +89,7 @@
           justify-content: space-between;
 }
 .row1 .row1_2 .row1_2_item {
-  margin-top: 10rpx;
+  margin-top: 5rpx;
   height: 200rpx;
 }
 .row1 .row1_2 .row1_2_item image {

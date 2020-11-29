@@ -2,7 +2,6 @@
   "pages": [
     "pages/index/index",
     "pages/user/user",
-    "pages/login/login",
     "pages/user_details/user_details"
   ],
   "subPackages": [],

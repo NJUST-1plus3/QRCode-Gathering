@@ -1,19 +1,26 @@
 <template>
 	<view class="content">
-	<!-- 		<van-notice-bar left-icon="volume-o" 
-										scrollable
-										text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。"/> -->
+		<!-- 消息通知栏 -->
+		<van-notice-bar 
+			left-icon="volume-o" 
+			scrollable
+			class="notice-bar"
+			:text="text"/>
+		<!-- 使用介绍 -->
+		<view class="details">
+			<image src="../../static/images/index.jpg"></image>
+		</view>
 		<view class="row1">
 			<view class="row1_1">
-				<image src="../../static/img/wx-pay1.jpg" mode="widthFix" @click="showQRCode(1)"/>
+				<image src="../../static/images/wx-pay1.jpg" mode="widthFix" @click="showQRCode(1)"/>
 			</view>
 			<view class="row1_2">
 				<view class="row1_2_item" >
-					<image src="../../static/img/ali-pay1.jpg" @click="showQRCode(2)">
+					<image src="../../static/images/ali-pay1.jpg" @click="showQRCode(2)">
 				</view>
 				<view class="row1_2_item" >
-					<image src="../../static/img/id-code1.jpg" @click="showQRCode(3)"/>
-				</view>
+					<image src="../../static/images/id-code1.jpg" @click="showQRCode(3)"/>
+				</view>	
 			</view>
 		</view>
 		<van-divider/>
@@ -29,7 +36,6 @@
 		  use-slot
 		  title="收款码"
 		  :show="show"
-		  show-cancel-button
 		  @close="onClose"
 		>
 		  <image :src="showImg" />
@@ -41,6 +47,7 @@
 	export default {
 		data() {
 			return {
+				text: '小程序 （汇码）QRCodeGathering 1.0v 正式上线啦 ！',
 				show: false,
 				showImg: ''
 			}
@@ -55,23 +62,26 @@
 				console.log(e);
 				switch(e) {
 					case 1:
-						this.showImg = "../../static/img/wx-pay2.jpg";
+						this.showImg = "../../static/images/wx-pay2.jpg";
 						console.log("~~~~~~~~~~~~~~~~");
 						break;
 					case 2:
-						this.showImg = "../../static/img/ali-pay2.jpg";
+						this.showImg = "../../static/images/ali-pay2.jpg";
 						console.log(this.showImg);
 						break;
 					case 3:
-						this.showImg = "../../static/img/id-code2.jpg";
+						this.showImg = "../../static/images/id-code2.jpg";
 						break;
 					case 4:
-						this.showImg = "../../static/img/wx-health2.jpg";
+						this.showImg = "../../static/images/wx-health2.jpg";
 						break;
 					case 5:
 						this.showImg = "";
 						break;
 				}
+			},
+			onClose() {
+				this.show = !this.show;
 			}
 		}
 	}
@@ -85,6 +95,15 @@
 		justify-content: center;
 		background-color: $uni-bg-color;
 	}
+	.notice-bar {
+		width: 100%;
+	}
+	.details image {
+		width: 750rpx;
+		height: 400rpx;
+		border-radius: 30rpx;
+		margin-top: 5rpx;
+	}
 	.row1 {
 		width: 730rpx;
 		height: 400rpx;
@@ -92,7 +111,7 @@
 		flex-direction: row;
 		justify-content: space-around;
 		.row1_1 {
-			margin-top: 10rpx;
+			margin-top: 5rpx;
 			width: 350rpx;
 			height: 400rpx;
 			image {
@@ -108,7 +127,7 @@
 			flex-direction: column;
 			justify-content: space-between;
 			.row1_2_item {
-				margin-top: 10rpx;
+				margin-top: 5rpx;
 				height: 200rpx;
 				image {
 					width: 350rpx;

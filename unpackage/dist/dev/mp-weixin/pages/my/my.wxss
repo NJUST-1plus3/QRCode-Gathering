@@ -1,0 +1,249 @@
+
+.top_box {
+      width: 100%;
+      padding: 0 30rpx 30rpx 30rpx;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border-bottom: 1rpx solid #eee;
+}
+.top_1 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+              flex-direction: column;
+      width: 70%;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+              justify-content: space-between;
+      height: 140rpx;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 10rpx 20rpx;
+}
+.top_1_1 {
+      font-size: 42rpx;
+      letter-spacing: 2rpx;
+}
+.top_1_2 {
+      font-size: 34rpx;
+      color: #919191;
+      line-height: 42rpx;
+}
+.top_2 {
+      width: 30%;
+      height: 140rpx;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+}
+.avator {
+      width: 140rpx;
+      height: 140rpx;
+      -webkit-border-radius: 70rpx;
+              border-radius: 70rpx;
+      overflow: hidden;
+}
+.avator image {
+      width: 140rpx;
+      height: 140rpx;
+}
+.center_box {
+      width: 100%;
+      padding: 20rpx 0;
+      height: 200rpx;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-justify-content: space-around;
+              justify-content: space-around;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+}
+.center_1 {
+      width: 160rpx;
+      height: 160rpx;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+}
+.center_1 view {
+      font-size: 26rpx;
+      padding-top: 20rpx;
+}
+.center_1 image {
+      width: 60rpx;
+      height: 60rpx;
+}
+.blank {
+      width: 100%;
+      height: 20rpx;
+      background: #f4f4f4;
+}
+.bottom_box {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 0 40rpx;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+              flex-direction: column;
+}
+.bottom_card {
+      position: relative;
+      width: 100%;
+      height: 124rpx;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+              justify-content: space-between;
+      border-bottom: 1rpx solid #eee;
+      background: #fff;
+}
+.bottom_card button{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.01;
+}
+.bottom_card image {
+      width: 14rpx;
+      height: 25rpx;
+}
+.bottom_1 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      height: 100%;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+}
+.bottom_1 image {
+      width: 40rpx;
+      height: 40rpx;
+}
+.bottom_1 view {
+      font-size: 30rpx;
+      letter-spacing: 3rpx;
+      padding-left: 30rpx;
+}
+.share_contain {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+}
+.share_box {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+      padding: 10rpx 20rpx 25rpx 20rpx;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      width: 500rpx;
+      -webkit-justify-content: space-around;
+              justify-content: space-around;
+}
+.share_one {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      position: relative;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+}
+.share_one image {
+      width: 70rpx;
+      height: 70rpx;
+}
+.share_one view {
+      padding-top: 20rpx;
+      font-size: 26rpx;
+}
+.share_title {
+      font-size: 30rpx;
+      letter-spacing: 3rpx;
+      padding: 16rpx;
+}
+.share_border {
+      margin-top: 20rpx;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      height: 6rpx;
+      width: 60rpx;
+      -webkit-border-radius: 3rpx;
+              border-radius: 3rpx;
+      border-bottom:6rpx solid #fbbd08;
+}
+.share_button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.01;
+      border: none;
+}
+.share_button::after {
+      border: none;
+}
+.share_bor {
+      height: 60rpx;
+      width: 1rpx;
+      border-left: 1rpx solid #e7e7e7;
+}
+
+

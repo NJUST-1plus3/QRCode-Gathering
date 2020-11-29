@@ -13,10 +13,10 @@
 			}
 		},
 		{
-			"path":"pages/login/login"
-		},
-		{
-			"path":"pages/user_details/user_details"
+			"path":"pages/user_details/user_details",
+			"style": {
+				"navigationBarTitleText": "修改信息"
+			}
 		}
 	],
 	"globalStyle": {

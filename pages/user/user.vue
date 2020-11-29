@@ -3,7 +3,7 @@
 		<view class="user-info">
 			<view class="user-detail" @click="toUserDetails">
 				<view class="user-icon">
-					<image :src="userInfo.imgSrc" mode=""></image>
+					<image :src="userInfo.imgSrc"></image>
 				</view>
 				<view class="user-name">
 					{{userInfo.name}}
@@ -15,7 +15,7 @@
 				<view class="other-item-info">
 					<van-icon name="service-o" size="40rpx" color="#f57018"/>
 					<text>联系客服</text>
-					<view class="arrow"><van-icon name="arrow" /></view>
+					<view class="arrow"><van-icon name="arrow"/></view>
 				</view>
 			</view>
 			<view class="divLine"></view>
@@ -59,7 +59,7 @@
 			return {
 				showShare: false,
 				userInfo: {
-					name: "啦啦啦",
+					name: "汇码",
 					imgSrc: "../../static/logo.png"
 				},
 				options: [

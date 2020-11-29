@@ -174,10 +174,17 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
+      text: '小程序 （汇码）QRCodeGathering 1.0v 正式上线啦 ！',
       show: false,
       showImg: '' };
 
@@ -192,23 +199,26 @@ var _default =
       console.log(e);
       switch (e) {
         case 1:
-          this.showImg = "../../static/img/wx-pay2.jpg";
+          this.showImg = "../../static/images/wx-pay2.jpg";
           console.log("~~~~~~~~~~~~~~~~");
           break;
         case 2:
-          this.showImg = "../../static/img/ali-pay2.jpg";
+          this.showImg = "../../static/images/ali-pay2.jpg";
           console.log(this.showImg);
           break;
         case 3:
-          this.showImg = "../../static/img/id-code2.jpg";
+          this.showImg = "../../static/images/id-code2.jpg";
           break;
         case 4:
-          this.showImg = "../../static/img/wx-health2.jpg";
+          this.showImg = "../../static/images/wx-health2.jpg";
           break;
         case 5:
           this.showImg = "";
           break;}
 
+    },
+    onClose: function onClose() {
+      this.show = !this.show;
     } } };exports.default = _default;
 
 /***/ }),

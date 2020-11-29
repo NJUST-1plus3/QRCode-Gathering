@@ -191,7 +191,7 @@ var _default =
     return {
       showShare: false,
       userInfo: {
-        name: "啦啦啦",
+        name: "汇码",
         imgSrc: "../../static/logo.png" },
 
       options: [
